@@ -1,0 +1,12 @@
+@(header: Html = Html(""))(content: Html)(implicit requestHeader: RequestHeader, messages: Messages, pageMeta: PageMeta)
+<!DOCTYPE html>
+<html lang="@messages.lang">
+<head>
+  <meta charset="UTF-8">
+  @pageMeta.toHtml
+  @header
+</head>
+<body>
+  @content
+</body>
+</html>

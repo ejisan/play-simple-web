@@ -1,0 +1,8 @@
+webpage.index.title = ホームページ
+webpage.index.keywords = キーワード1, キーワード2, キーワード3
+webpage.index.description = Play Frameworkによるシンプルウェブサイト
+
+webpage.index.top = Play Frameworkによるシンプルウェブサイト ^^
+webpage.index.openModal = クリックしてモーダルを開く
+webpage.index.modal.title = やったね
+webpage.index.modal.messages = サンプルのモーダル
