@@ -8,7 +8,8 @@ scalaVersion := "2.11.7"
 
 // Dependencies
 libraryDependencies ++= Seq(
-  "com.ejisan" %% "play-pagemeta" % "1.1.0",
+  "com.ejisan" %% "play-pagemeta" % "1.2.1",
+  "com.ejisan" %% "play-form" % "1.0.0",
   specs2 % Test
 )
 
