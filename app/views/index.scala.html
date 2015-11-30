@@ -1,21 +1,29 @@
 @()(implicit header: RequestHeader, messages: Messages, pm: PageMeta)
 @helper.base {
-  <link href="@routes.Assets.versioned("styles/main.css")" rel="stylesheet">
+  <link href="@routes.Assets.versioned("styles/main.min.css")" rel="stylesheet">
 } {
   <section class="row">
     <div class="columns small-12" id="content">
       @Messages("webpage.index.top")
-      <a href="#" data-reveal-id="modal">@Messages("webpage.index.openModal")</a>
+      <a href="#" data-toggle="modal">@Messages("webpage.index.openModal")</a>
     </div>
   </section>
 
-  <div id="modal" class="reveal-modal" data-reveal aria-labelledby="title" aria-hidden="true" role="dialog">
+  <div id="modal" class="reveal" data-reveal data-close-on-click='true'>
     <h2 id="modalTitle">@Messages("webpage.index.modal.title")</h2>
     <p>@Messages("webpage.index.modal.messages")</p>
-    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <button class="close-button" data-close aria-label="Close reveal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
   </div>
 
   <script src="@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))"></script>
-  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.min.js"))"></script>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.core.js"))"></script>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.util.keyboard.js"))"></script>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.util.box.js"))"></script>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.util.triggers.js"))"></script>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.util.mediaQuery.js"))"></script>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.util.motion.js"))"></script>
+  <script src="@routes.WebJarAssets.at(WebJarAssets.locate("foundation.reveal.js"))"></script>
   <script src="@routes.Assets.versioned("scripts/main.js")"></script>
 }

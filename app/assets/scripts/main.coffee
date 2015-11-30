@@ -1,1 +1,1 @@
-$(document).foundation 'reveal', 'reflow'
+$(document).foundation()
