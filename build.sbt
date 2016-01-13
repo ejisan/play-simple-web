@@ -16,10 +16,10 @@ libraryDependencies ++= Seq(
 // Web Jars Dependencies
 libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.4.0-2",
-  "org.webjars" % "jquery" % "2.1.4",
-  "org.webjars" % "foundation" % "6.0.3"
+  "org.webjars" % "jquery" % "2.2.0",
+  "org.webjars" % "foundation" % "6.0.5"
 )
-dependencyOverrides += "org.webjars" % "jquery" % "2.1.4"
+dependencyOverrides += "org.webjars" % "jquery" % "2.2.0"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
 
 // Resolvers
