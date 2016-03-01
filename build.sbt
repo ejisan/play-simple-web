@@ -1,6 +1,6 @@
 name := "play-simple-web"
 
-version := "1.1.0"
+version := "1.0.0"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
@@ -16,10 +16,10 @@ libraryDependencies ++= Seq(
 // Web Jars Dependencies
 libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.4.0-2",
-  "org.webjars" % "jquery" % "2.2.0",
-  "org.webjars" % "foundation" % "6.0.5"
+  "org.webjars" % "jquery" % "2.2.1",
+  "org.webjars" % "foundation" % "6.2.0"
 )
-dependencyOverrides += "org.webjars" % "jquery" % "2.2.0"
+dependencyOverrides += "org.webjars" % "jquery" % "2.2.1"
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
 
 // Resolvers
