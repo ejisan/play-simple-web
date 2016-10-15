@@ -1,0 +1,8 @@
+webpage.index.title = Home Page
+webpage.index.keywords = keyword1, keyword2, keyword3
+webpage.index.description = Play Simple Web Site
+
+webpage.index.top = Play Simple Web Site
+webpage.index.openModal = Click Me For A Foundation Modal
+webpage.index.modal.title = Awesome
+webpage.index.modal.messages = Sample modal
