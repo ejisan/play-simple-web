@@ -1,10 +1,11 @@
-@(header: Html = Html(""))(content: Html)(implicit requestHeader: RequestHeader, messages: Messages, pageMeta: PageMeta)
+@(header: Html = Html(""))(content: Html)(implicit request: RequestHeader, messages: Messages, pageMeta: PageMeta, wjAssets: WebJarAssets)
 <!DOCTYPE html>
-<html lang="@messages.lang.code">
+<html lang="@{messages.lang.code}">
 <head>
   <meta charset="UTF-8">
   @pageMeta.toHtml
-  <link href="@routes.Assets.versioned("styles/global.min.css")" rel="stylesheet">
+  <link rel="shortcut icon" href="@routes.Assets.versioned("images/favicon.png")" type="image/png"/>
+  <link href="@routes.Assets.versioned("styles/foundation.css")" rel="stylesheet">
   @header
 </head>
 <body>
