@@ -1,8 +1,8 @@
-webpage.index.title = Home Page
-webpage.index.keywords = keyword1, keyword2, keyword3
-webpage.index.description = Play Simple Web Site
+homecontroller.index.title = Home Page
+homecontroller.index.keywords = keyword1, keyword2, keyword3
+homecontroller.index.description = Play Simple Web Site
 
-webpage.index.top = Play Simple Web Site
-webpage.index.openModal = Click Me For A Foundation Modal
-webpage.index.modal.title = Awesome
-webpage.index.modal.messages = Sample modal
+homecontroller.index.top = Play Simple Web Site
+homecontroller.index.openModal = Click Me For A Foundation Modal
+homecontroller.index.modal.title = Awesome
+homecontroller.index.modal.messages = Sample modal
